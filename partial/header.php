@@ -1,3 +1,7 @@
+<?php
+include("partial/connect.php");
+?>
+
 <!-- Header -->
 <header>
 		<!-- Header desktop -->
