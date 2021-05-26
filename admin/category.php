@@ -46,7 +46,7 @@ include("adminpartial/aside.php");
                   <label for="category">Categories</label>
                   <input type="text" class="form-control" id="category" placeholder="Enter category">
                 </div>
-               
+  
               </div>
               <!-- /.box-body -->
 
