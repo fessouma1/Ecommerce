@@ -37,30 +37,28 @@ include("adminpartial/aside.php");
 </div>
 
 <div class="col-sm-6">
-
-
-       <form role="form">
+       <form role="form" action="producthandler.php" method="post" enctype="multipart/form-data">
        <h1>Products</h1>
               <div class="box-body">
                 <div class="form-group">
                   <label for="name">Name</label>
-                  <input type="text" class="form-control" id="name" placeholder="Enter Product Name">
+                  <input type="text" class="form-control" id="name" placeholder="Enter Product Name" name="name">
                 </div>
                 <div class="form-group">
                   <label for="price">Price</label>
-                  <input type="text" class="form-control" id="price" placeholder="price">
+                  <input type="text" class="form-control" id="price" placeholder="price" name="price">
                 </div>
                 <div class="form-group">
                   <label for="picture">File input</label>
-                  <input type="file" id="picture">
+                  <input type="file" id="picture" name="file">
                 </div>
                 <div class="form-group">
                   <label for="description">Description</label>
-                  <textarea id="description" class="form-group-control" row="10" placeholder="Enter Description"></textarea>
+                  <textarea id="description" class="form-group-control" row="10" placeholder="Enter Description" name="description"></textarea>
                 </div>
                 <div class="form-group">
                 <label for="category">category</label>
-                <select id="category">
+                <select id="category" name="category">
                 <option>Shirt</option>
                 <option>Pants</option>
                 </select>

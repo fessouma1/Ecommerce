@@ -1,9 +1,9 @@
-<?php_
+<?php
 include("../partial/connect.php");
-$email=$_POST['email'];
-$msg=$POST['msg'];
+$category=$_POST['name'];
 
-$sql="INSERT INTO contact(email,msg) VALUES('email','msg')";
+
+$sql="INSERT INTO categories(name) VALUES('$category')";
 
 $connect->query($sql);
 ?>
