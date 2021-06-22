@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <?php
+include("adminpartial/session.php");
     include("adminpartial/head.php");
 ?>
 <body class="hold-transition skin-blue sidebar-mini">

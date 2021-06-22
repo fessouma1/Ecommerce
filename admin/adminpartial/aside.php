@@ -32,6 +32,12 @@
             
           </a>
         </li>
+        <li>
+          <a href="products.php">
+            <i class="fa fa-th"></i> <span>products</span>
+            
+          </a>
+        </li>
         
       </ul>
     </section>

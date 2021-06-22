@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <?php
+include("adminpartial/session.php");
     include("adminpartial/head.php");
 ?>
 <body class="hold-transition skin-blue sidebar-mini">
@@ -59,8 +60,16 @@ include("adminpartial/aside.php");
                 <div class="form-group">
                 <label for="category">category</label>
                 <select id="category" name="category">
-                <option>Shirt</option>
-                <option>Pants</option>
+
+                <?php
+                include("../partial/connect.php");
+                $cat="SELECT * from categories";
+                $result=mysqli_query($connect,$cat);
+                while($row=mysqli_fetch_assoc($result)){
+                  echo "<option value=".$row['id'].">".$row['name']."</option>";
+                }
+
+                ?>
                 </select>
               </div>
               <!-- /.box-body -->
