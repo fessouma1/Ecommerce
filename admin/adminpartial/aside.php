@@ -38,6 +38,12 @@
             
           </a>
         </li>
+        <li>
+          <a href="adminpartial/logout.php">
+            <i class="fa fa-th"></i> <span>Sign out</span>
+            
+          </a>
+        </li>
         
       </ul>
     </section>
