@@ -40,18 +40,18 @@ include("adminpartial/aside.php");
 
        $sql="Select * FROM products";;
        $results=$connect->query($sql);
-       while($final=$results->fetch_assoc())
-       { ?>
-       <a href="proshow.php? pro_id=<?php echo $final['id']?>">
-       <h3><?php echo $final['id'] ?> : <?php echo $final['name'] ?></h3> <hr><br>
-
+       while($final=$results->fetch_assoc()){ ?>
+       
+       <a href="proshow.php?pro_id=<?php echo $final['id']?>">
+       <h3><?php echo $final['id'] ?> : <?php echo $final['name'] ?></h3> <br>
        </a>
 
+       <a href="proupdate.php?up_id=<?php echo $final['id'] ?>">
+       <button>Update</button>
+       </a><br>
        
-       <?php }
-       ?>
-       
-      
+      <?php }
+      ?>
 
        </div>
 
